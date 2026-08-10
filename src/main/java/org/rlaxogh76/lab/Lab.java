@@ -14,6 +14,7 @@ import org.bukkit.scoreboard.Score;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.ScoreboardManager;
 import org.rlaxogh76.lab.commands.InventoryListener;
+import org.rlaxogh76.lab.commands.TimerStart;
 
 import java.util.Objects;
 
@@ -24,6 +25,7 @@ public final class Lab extends JavaPlugin implements Listener {
         Objects.requireNonNull(this.getCommand("test")).setExecutor(new TestCommand(this));
         this.getServer().getPluginManager().registerEvents(new InventoryListener(), this);
         getServer().getPluginManager().registerEvents(this, this);
+        getCommand("타이머").setExecutor(new TimerStart(this));
     }
 
     @EventHandler

@@ -6,3 +6,6 @@ api-version: "1.21"
 commands:
   test:
     description: "테스트용 GUI 열기"
+  타이머:
+    description: 모든 플레이어에게 보이는 보스바 타이머를 시작합니다.
+    usage: /타이머 [초]
