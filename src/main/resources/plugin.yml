@@ -1,9 +1,8 @@
 name: lab
-version: '1.0-SNAPSHOT'
+version: "1.0-SNAPSHOT"
 main: org.rlaxogh76.lab.Lab
-api-version: '1.21'
+api-version: "1.21"
 
 commands:
   test:
-    description: "플러그인 테스트"
-    usage: /test
+    description: "테스트용 GUI 열기"
